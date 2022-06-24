@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOOULMATE</title>
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <div>
+        <button class="btn btn-primary" type="button"
+         data-bs-toggle="modal" data-bs-target="#intro">
+            댓글등록창
+        </button>
+    </div>
+    <div class="modal fade" id="intro"><div class="modal-dialog">
+        <div class="modal-content">                                    
+                <div class="modal-body">
+                    <div class="test">
+                        <div id="maindiv">
+                            <div class="flex-container-container">
+                                <div class="flex-item2 color-red1-red1">
+                                    <img src="../SOOULMATE/img/feed1.jpg" alt="" id="grim">
+                                </div>
+                                <div class="flex-item3 color-red2-red2">
+                                    <div class="reply1">
+                                        <img src="img/pro12.jpg" alt="" id="profpt1">
+                                        <div class="tkdydwk1-wrapper">
+                                            <div class="tkdydwk1">
+                                                <div style="margin-top: 20px; margin-left: 10px;">
+                                                    <a href="">tkdydwk1</a>
+                                                </div>
+                                                <div>
+                                                    같이 한잔 하실??<br>                                                    
+                                                    처처 맛집!<br><br> 
+                                                    <a href="">#처음처럼</a> <a href="">#먹고죽자</a> <a href="">#소주맛집</a>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reply2">
+                                        <div class="tkdydwk2">
+                                            <img src="img/142F284E4ED1462B19.jpg" alt="" id="profpt2">
+                                            <div style="margin-top: 10px; margin-left: 15px;">
+                                                <a href="">tkdydwk2</a>  
+                                            </div> 
+                                            <div style="margin: 10px">
+                                                손 손!!!!!!!!!!
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                    <div class="reply3">
+                                        <div class="tkdydwk3">
+                                            <img src="img/2022041101338_0.jpg" alt="" id="profpt3">
+                                            <div style="margin-top: 10px; margin-left: 15px;">
+                                                <a href="">tkdydwk3</a>  
+                                            </div>  
+                                            <div style="margin: 10px">
+                                                혼술 하자..........
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    <div class="reply4">
+                                        <div class="tkdydwk4">
+                                            <img src="img/61f205cc2700001106456c6e.jpg" alt="" id="profpt4">
+                                            <div style="margin-top: 10px; margin-left: 15px;">
+                                                <a href="">tkdydwk4</a>  
+                                            </div> 
+                                            <div style="margin: 10px">
+                                                일끝나고 소주가 진리...ㅇㅇ
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-container2-container">
+                                <div class="flex-item4 color-blue1">
+                                    <div class="top-slide">
+                                        <div class="carousel slide" data-bs-ride="carousel" id="slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#slide"
+                                                data-bs-slide-to="0" class="active"></button>
+                                                <button type="button" data-bs-target="#slide"
+                                                data-bs-slide-to="1"></button>
+                                                <button type="button" data-bs-target="#slide"
+                                                data-bs-slide-to="2"></button>
+                                                <button type="button" data-bs-target="#slide"
+                                                data-bs-slide-to="3"></button>
+                                            </div>
+                                            <a href="#slide" class="carousel-control-prev"
+                                            data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a href="#slide" class="carousel-control-next"
+                                            data-bs-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="txtarea2">
+                                    <div class="whdkdyqjxms">
+                                        <img id="kkan" src="img/kkbicon.png" alt="">
+                                        <img id="bin" src="img/binjan.png" alt="">
+                                        <script>
+                                            var $bin = document.getElementById('bin');
+                                            console.log($bin);
+                                            
+                                            $bin.onclick = function() {
+                                                if($bin.getAttribute('src') == "img/binjan.png")
+                                                $bin.src = "img/fulljan.png";
+                                                else
+                                                $bin.src = "img/binjan.png";
+                                            }
+                                            
+                                            $(function() {
+                                                $("#kkan").on("click", function() {
+                                                    alert("깐부 신청 완료");
+                                                });
+                                            });
+                                            </script>
+                                    </div>
+                                    <textarea class="txtarea3" placeholder="내용을 입력해 주세요."></textarea>
+                                </div>
+                                
+                            </div>
+                            <div class="btn">
+                                <button type="button">올리기</button>
+                                <button type="button" data-bs-dismiss="modal">취 소</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>        
+    </div>
+    
+</body>
+</html>
